@@ -55,11 +55,28 @@ nav {
 
 section{
     background-color: red;
+    width: 70%;
 }
 
+#principal-superior{
+    background-color: blue;
+}
+
+#principal-superior ul{
+    display: inline-block;
+}
+aside{
+    background-color: #1eff00;
+    width: 30%;
+}
 
 #nome,
 #sobre {
-	color: green;
-	font-family: "Times New Roman", Times, serif;
+	color: #01BAEF;
+	font-family: 'Bricolage Grotesque', sans-serif;
+    /* font-family: "Times New Roman", Times, serif; */
+}
+
+#perfil{
+    width: 20%;
 }
