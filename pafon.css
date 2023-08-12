@@ -3,45 +3,48 @@ body{
     background-color: rgb(4, 116, 88);
 }
 nav{
-    position: relative;
-    background-color: rgb(63,255,0);
-    background: radial-gradient(circle, rgba(63,255,0,1) 0%, rgba(0,0,0,1) 100%);
-    margin: 3% 0 0 4%;
-    width: 15%;
-    height: 10em;
-    border-radius: 10% 10%;
-}
-
-ul{
-    list-style-type: none;
     margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 100%;
+    width: 25%;
+    height: max-content;
+    background-color: red;
+    padding: 1% 0 1% 0;
 }
 
-li{
-    margin: 5%;
+#menu-lateral{
+    border-radius: 10% 10%;
+    background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(30,110,4,1) 45%, rgba(0,0,0,1) 100%);
+    padding: 10%;
 }
 
-a:link{
+#menu-lateral ul{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+#menu-lateral li{
+    margin-bottom: 10%;
+    width: 80%;
+    background-color: aqua;
+    color: #1eff00;
+    list-style-type: none;
+}
+
+#menu-lateral a:link{
     color: white;
     font-weight: bold;
     text-decoration: none;
 }
 
-a:visited{
+#menu-lateral a:visited{
     color: white;
 }
 
-a:hover{
+#menu-lateral a:hover{
     color: rgb(163, 207, 163);
     text-shadow: 0 0 3px #1eff00, 0 0 3px #000000;
     
 }
 
-a:active{
+#menu-lateral a:active{
     color: rgb(0, 243, 0);
     text-shadow: 0 0 3px #1eff00, 0 0 3px #000000;
 }
