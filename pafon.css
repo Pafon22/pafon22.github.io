@@ -1,56 +1,65 @@
-body{
-    color: white;
-    background-color: rgb(4, 116, 88);
+html {
+	font-size: calc(15px + 0.390625vw);
 }
-nav{
-    margin: 0;
-    width: 25%;
-    height: max-content;
+body {
+	color: white;
+	background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(4,116,88,1) 45%, rgba(0,0,0,1) 100%);
+}
+nav {
+	/* background-color: black; */
+	margin: 0;
+	width: 100%;
+	/* background-color: red; */
+	padding: 1% 10%;
+}
+
+#menu-superior {
+	/* background: linear-gradient(270deg, rgb(29, 167, 75) 0%, rgba(30,110,4,1) 45%, rgba(11, 255, 92) 100%); */
+}
+
+#menu-superior li {
+    /* border-bottom: dashed rgb(255, 255,255); */
+    border-bottom: dashed rgb(0,0,0);
+    display: inline-block;
+	border-radius: 50% 20%;
+	margin-right: 2%;
+	padding: 1% 2%;
+	background: linear-gradient(
+		270deg,
+		rgb(0, 48, 16) 0%,
+		rgba(4, 116, 88, 1) 45%,
+		rgba(0, 48, 16) 100%
+	);
+	list-style-type: none;
+}
+
+#menu-superior a:link {
+    color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#menu-superior a:visited {
+	color: white;
+}
+
+#menu-superior a:hover {
+	color: rgb(163, 207, 163);
+	text-shadow: 0 0 3px #1eff00, 0 0 3px #000000;
+}
+
+#menu-superior a:active {
+	color: rgb(0, 243, 0);
+	text-shadow: 0 0 3px #1eff00, 0 0 3px #000000;
+}
+
+section{
     background-color: red;
-    padding: 1% 0 1% 0;
-}
-
-#menu-lateral{
-    border-radius: 10% 10%;
-    background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(30,110,4,1) 45%, rgba(0,0,0,1) 100%);
-    padding: 10%;
-}
-
-#menu-lateral ul{
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-#menu-lateral li{
-    margin-bottom: 10%;
-    width: 80%;
-    background-color: aqua;
-    color: #1eff00;
-    list-style-type: none;
-}
-
-#menu-lateral a:link{
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-#menu-lateral a:visited{
-    color: white;
-}
-
-#menu-lateral a:hover{
-    color: rgb(163, 207, 163);
-    text-shadow: 0 0 3px #1eff00, 0 0 3px #000000;
-    
-}
-
-#menu-lateral a:active{
-    color: rgb(0, 243, 0);
-    text-shadow: 0 0 3px #1eff00, 0 0 3px #000000;
 }
 
 
-#nome, #sobre{
-    color: green;
-    font-family: 'Times New Roman', Times, serif;
+#nome,
+#sobre {
+	color: green;
+	font-family: "Times New Roman", Times, serif;
 }
