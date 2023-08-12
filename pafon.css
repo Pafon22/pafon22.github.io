@@ -11,19 +11,10 @@ body {
 	);
 }
 nav {
-	/* background-color: black; */
 	width: 100%;
-	/* background-color: red; */
-	padding: 0% 0%;
-}
-
-#menu-superior {
-	/* background: linear-gradient(270deg, rgb(29, 167, 75) 0%, rgba(30,110,4,1) 45%, rgba(11, 255, 92) 100%); */
-    margin-left: 2%;
 }
 
 #menu-superior li {
-	/* border-bottom: dashed rgb(255, 255,255); */
 	border-bottom: dashed rgb(0, 0, 0);
 	display: inline-block;
 	border-radius: 50% 20%;
@@ -86,7 +77,6 @@ aside {
 #principal-superior{
     margin: 1% 3%;
     display: inline-block;
-    /* background-color: antiquewhite; */
     width: 100%;
 }
 
