@@ -21,7 +21,6 @@
 /* Paleta: 
 */
 
-
 body {
 	color: white;
 	background: linear-gradient(
@@ -29,10 +28,10 @@ body {
 		rgba(0, 0, 0, 1) 0%,
 		rgba(4, 116, 88, 1) 45%,
 		rgba(0, 0, 0, 1) 100%
-		);
-		font-family: "Bricolage Grotesque", sans-serif;
-		font-weight: bold;
-		text-shadow: 2px 2px black, 2px 2px black;
+	);
+	font-family: "Bricolage Grotesque", sans-serif;
+	font-weight: bold;
+	text-shadow: 2px 2px black, 2px 2px black;
 }
 
 header {
@@ -41,41 +40,34 @@ header {
 	margin: 0 0 3% 0;
 }
 
-header span:first-of-type{
+header span:first-of-type {
 	width: 100%;
 	display: block;
 }
-header span:first-of-type{
+header span:first-of-type {
 	width: 100%;
 	display: block;
 	border-right: 4px solid;
 	white-space: nowrap;
 	overflow: hidden;
-	animation: typing 2s;
+	animation: typing 2s steps(100);
 }
 @keyframes typing {
-	from	{
+	from {
 		width: 0;
 	}
 }
-@keyframes blinking {
-	50%	{
-		border-color: transparent;
-	}
-}
-
-
 
 header span:not(:nth-of-type(1)) {
 	font-size: 0.4em;
 	display: inline-block;
-	border-bottom: dotted  2px rgb(169, 253, 172);
+	border-bottom: dotted 2px rgb(169, 253, 172);
 }
 .left {
 	/* background-color: antiquewhite; */
 	float: left;
 }
-.right{
+.right {
 	/* background-color: antiquewhite; */
 	float: right;
 }
@@ -86,7 +78,6 @@ nav {
 	width: 100%;
 }
 
-
 nav ul {
 	text-align: center;
 	list-style: none;
@@ -96,9 +87,9 @@ nav ul {
 		rgba(0, 0, 0, 1) 0%,
 		rgb(169, 253, 172) 50%,
 		rgba(0, 0, 0, 1) 100%
-		);
-	}
-	
+	);
+}
+
 nav ul li {
 	font-family: "Bricolage Grotesque", sans-serif;
 	font-size: 2em;
@@ -109,29 +100,28 @@ nav ul li {
 	position: sticky;
 }
 
-nav a{
+nav a {
 	text-decoration: none;
 }
 
-a:hover{
+a:hover {
 	color: rgba(9, 255, 0, 0.623);
 	/* text-shadow: 5px 5px 6px rgb(0, 0, 0), 2px 2px 6px #000000; */
 	text-shadow: 2px 1px 2px black;
-	
 }
 
-a:active{
+a:active {
 	color: rgba(30, 110, 4, 1);
 }
 
-nav a:visited{
+nav a:visited {
 	text-decoration: none;
 }
 
-article{
+article {
 	margin-left: 2%;
-	background: linear-gradient()
+	background: linear-gradient();
 }
-#perfil{
+#perfil {
 	width: 20%;
 }
