@@ -67,7 +67,7 @@ nav {
 }
 
 article{
-	background-color: red;
+	/* background-color: red; */
 }
 
 section {
@@ -86,7 +86,7 @@ section {
 }
 
 #sec1{
-	background-color: red;
+	/* background-color: red; */
 	margin-left: 5%;
 	width: 15%;
 	display: inline-block;
