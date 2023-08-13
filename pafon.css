@@ -66,6 +66,9 @@ nav {
 	text-shadow: 0 0 3px rgb(169, 253, 172), 0 0 3px #000000;
 }
 
+article{
+	background-color: red;
+}
 
 section {
 	position: relative;
@@ -91,9 +94,9 @@ section {
 #foto-perfil {
 	display: inline-block;
 	/* display: inline-block; */
-	position: absolute;
+	/* position: absolute; */
 	left: 5%;
-	width: 17%;
+	width: 100%;
 	top: 0%;
 }
 
