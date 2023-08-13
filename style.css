@@ -20,9 +20,30 @@ body {
 }
 
 header {
-	text-align: center;
 	font-size: 3rem;
+	text-align: center;
 	color: rgb(169, 253, 172);
+	/* background-color: red; */
+	margin: 0 0 3% 0;
+}
+
+header span:first-of-type{
+	width: 100%;
+	display: block;
+	/* background-color: red; */
+}
+header span:not(:nth-of-type(1)) {
+	font-size: 0.4em;
+	display: inline-block;
+	border-bottom: dotted  2px rgb(169, 253, 172);
+}
+.left {
+	/* background-color: antiquewhite; */
+	float: left;
+}
+.right{
+	/* background-color: antiquewhite; */
+	float: right;
 }
 
 nav {
@@ -65,4 +86,3 @@ nav ul li {
 	font-style: bold;
 	text-shadow: 2px 2px 6px rgb(0, 0, 0), 2px 2px 6px #000000;
 }
-
