@@ -46,14 +46,13 @@ header span:first-of-type{
 	display: block;
 }
 header span:first-of-type{
-	/* width: 100%; */
-	/* display: block; */
+	width: 100%;
+	display: block;
 	border-right: 4px solid;
-	width: 10ch;
 	white-space: nowrap;
 	overflow: hidden;
+	animation: typing 2s;
 }
-
 @keyframes typing {
 	from	{
 		width: 0;
