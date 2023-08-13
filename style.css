@@ -1,1 +1,68 @@
-body {background-color: rgb(68, 10, 10);}
+/* Paleta: 
+color: rgba(0, 48, 16, 1); Verde escuro normal
+color: rgba(4, 116, 88, 1); Verde legal indo pro azul, não tão pika quanto verde-água (/turquesa), mas evita brilho tão forte. --PRINCIPAL
+color: rgba(30, 110, 4, 1); Verde normal escolhido
+color: rgba(169, 253, 172, 1); Verde clarinho
+color: rgba(239, 241, 197, 1); Verde praticamente branco
+*/
+
+body {
+	color: white;
+	background: linear-gradient(
+		270deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(4, 116, 88, 1) 45%,
+		rgba(0, 0, 0, 1) 100%
+	);
+	font-family: "Bricolage Grotesque", sans-serif;
+	font-weight: bold;
+	text-shadow: 2px 2px black, 2px 2px black;
+}
+
+header {
+	text-align: center;
+	font-size: 3rem;
+	color: rgb(169, 253, 172);
+}
+
+nav {
+	/* background-color: yellow; */
+}
+
+.paleta1 {
+	color: rgba(0, 48, 16, 1);
+}
+.paleta2 {
+	color: rgba(4, 116, 88, 1);
+}
+.paleta3 {
+	color: rgba(30, 110, 4, 1);
+}
+.paleta4 {
+	color: rgba(169, 253, 172, 1);
+}
+.paleta5 {
+	color: rgba(239, 241, 197, 1);
+}
+
+nav ul {
+	text-align: center;
+	list-style: none;
+	padding: 2% 0 2% 0;
+	background: linear-gradient(
+		270deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgb(169, 253, 172) 50%,
+		rgba(0, 0, 0, 1) 100%
+	);
+}
+
+nav ul li {
+	font-family: "Bricolage Grotesque", sans-serif;
+	font-size: 2em;
+	display: inline-block;
+	margin: 0 5% 0 0;
+	font-style: bold;
+	text-shadow: 2px 2px 6px rgb(0, 0, 0), 2px 2px 6px #000000;
+}
+
