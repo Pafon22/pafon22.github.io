@@ -1,33 +1,8 @@
 :root {
-	/* --modn: max(
-  max(var(--num) - 0, 0) * (0 - max(-1, ((min(var(--num) - n, 0)) * max(var(--num) - 0, 0)))),
-  max(var(--num) - n, 0) * (0 - max(-1, ((min(var(--num) - 2*n, 0)) * max(var(--num) - n, 0)))),
-  max(var(--num) - 2*n, 0) * (0 - max(-1, ((min(var(--num) - 3*n, 0)) * max(var(--num) - 2*n, 0)))),
-  max(var(--num) - 3*n, 0) * (0 - max(-1, ((min(var(--num) - 4*n, 0)) * max(var(--num) - 3*n, 0)))),
-  ...
-  max(var(--num) - (n-2)*n, 0) * (0 - max(-1, ((min(var(--num) - (n-1)*n, 0)) * max(var(--num) - (n-2)*n, 0))))
-  max(var(--num) - (n-1)*n, 0) * (0 - max(-1, ((min(var(--num) - n*n, 0)) * max(var(--num) - (n-1)*n, 0))))
- ); */
-
-	/* BASE
-	color: rgb(9,255,0) */
-
-	/* --red: 9;
-	--green: 255;
-	--blue: 0;
-
-	--paleta1: rgb(var(--red), var(--green), var(--blue));
-	--paleta2: rgb(var(--modn, calc(var(--red) - 5), 255), var(--modn, calc(var(--green) - 139), 255), calc(var(--blue) + 88));
-	--paleta3: rgb(calc(var(--red) + 21), calc(var(--green) - 145), calc(var(--blue) + 4));
-	--paleta4: rgb(calc(var(--red) + 160), calc(var(--green) - 2), calc(var(--blue) + 172)); */
-	/* Tentando colocar o módulo de 255 no argumento de soma para que abaixo de 0 e acima de 255 não fique fixado em uma cor. Assim poderei alterar o tema do git escolhendo só a cor base 
-*/
-
 	--paleta1: rgb(9, 255, 0);
 	--paleta2: rgb(4, 116, 88);
 	--paleta3: rgb(30, 110, 4);
 	--paleta4: rgb(169, 253, 172);
-
 	--paleta2g: linear-gradient(
 		270deg,
 		rgba(0, 5, 0, 1) 0%,
@@ -36,16 +11,12 @@
 	);
 	--black: rgba(0, 0, 0, 0.4);
 	--black2: rgba(0, 0, 0, 0.9);
-
-	/* TESTE HSL */
-	/* --paleta1: hsl(118, 100%, 50%); */
 }
 
 html {
 	scroll-behavior: smooth;
 	animation: move 1.5s;
 }
-
 
 @keyframes move {
 	
@@ -133,12 +104,9 @@ header span:first-of-type {
 		width: 0;
 	}
 	100% {
-		border-right: 4px solid;
 		width: 100%;
 	}
 }
-
-
 
 header span:not(:nth-of-type(1)) {
 	font-size: 0.4em;
