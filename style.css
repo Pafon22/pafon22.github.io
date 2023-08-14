@@ -1,32 +1,26 @@
-.paleta1 {
-	/* color: rgba(0, 48, 16, 1); Verde claro forte */
-	color: rgba(9, 255, 0, 0.623);
+:root {
+	/* Destaque Hard */
+	--paleta1: rgb(9, 255, 0);
+	/* Fundo Principal */
+	--paleta2: rgb(4, 116, 88);
+	/* Apagado / Clicado */
+	--paleta3: rgb(30, 110, 4);
+	/* Destaque Soft */
+	--paleta4: rgb(169, 253, 172);
+	/*  Preto com menos opacidade */
+	--black: rgba(0, 0, 0, 0.4);
 }
-.paleta2 {
-	/* color: rgba(4, 116, 88, 1); Verde legal indo pro azul, não tão pika quanto verde-água (/turquesa), mas evita brilho tão forte. --PRINCIPAL */
-	color: rgba(4, 116, 88, 1);
+
+b {
+	color: var(--paleta1);
 }
-.paleta3 {
-	/* color: rgba(30, 110, 4, 1); Verde normal escolhido */
-	color: rgba(30, 110, 4, 1);
-}
-.paleta4 {
-	/* color: rgba(169, 253, 172, 1); Verde clarinho */
-	color: rgba(169, 253, 172, 1);
-}
-.paleta5 {
-	/* color: rgba(239, 241, 197, 1); Verde praticamente branco */
-	color: rgba(239, 241, 197, 1);
-}
-/* Paleta: 
-*/
 
 body {
 	color: white;
 	background: linear-gradient(
 		270deg,
-		rgba(0, 0, 0, 1) 0%,
-		rgba(4, 116, 88, 1) 45%,
+		rgba(0, 5, 0, 1) 0%,
+		var(--paleta2) 45%,
 		rgba(0, 5, 0, 1) 100%
 	);
 	font-family: "Bricolage Grotesque", sans-serif;
@@ -38,12 +32,9 @@ header {
 	font-size: 3em;
 	text-align: center;
 	margin: 0 0 3% 0;
+	color: var(--paleta4);
 }
 
-header span:first-of-type {
-	width: 100%;
-	display: block;
-}
 header span:first-of-type {
 	width: 100%;
 	display: block;
@@ -65,52 +56,43 @@ header span:first-of-type {
 header span:not(:nth-of-type(1)) {
 	font-size: 0.4em;
 	display: inline-block;
-	border-bottom: dotted 2px rgb(169, 253, 172);
+	border-bottom: dotted 2px var(--paleta4);
 }
 .left {
-	/* background-color: antiquewhite; */
 	float: left;
 }
 .right {
-	/* background-color: antiquewhite; */
 	float: right;
 }
 
 nav {
-	/* background-color: yellow; */
+	text-align: center;
+	background-color: var(--black);
+	margin-top: 1%;
+	padding: 1% 0;
+	/* tem display aq tb p evitar juntar com o header qd diminui a tela */
 	display: inline-block;
 	width: 100%;
-}
-
-nav ul {
-	text-align: center;
-	list-style: none;
-	padding: 2% 0 2% 0;
-	background: linear-gradient(
-		270deg,
-		rgba(0, 0, 0, 1) 0%,
-		rgb(169, 253, 172) 50%,
-		rgba(0, 0, 0, 1) 100%
-	);
 }
 
 nav ul li {
 	font-family: "Bricolage Grotesque", sans-serif;
 	font-size: 2em;
-	display: inline-block;
-	margin: 0 5% 0 0;
 	font-style: bold;
 	text-shadow: 2px 2px 6px rgb(0, 0, 0), 2px 2px 6px #000000;
+	list-style: none;
+	margin: 0 5% 0 0;
+	display: inline-block;
 	position: sticky;
 }
 
 nav a {
+	color: white;
 	text-decoration: none;
 }
 
 a:hover {
 	color: rgba(9, 255, 0, 0.623);
-	/* text-shadow: 5px 5px 6px rgb(0, 0, 0), 2px 2px 6px #000000; */
 	text-shadow: 2px 1px 2px black;
 }
 
@@ -123,53 +105,47 @@ nav a:visited {
 }
 
 main {
-	/* background-color: red; */
 }
 article {
-	display: inline-block;
-	width: 50%;
+	padding-top: 1%;
+	width: 60%;
 	margin: 2%;
-	padding: 5%;
-	border-radius: 10px 100px / 120px;
-	background-color: rgba(0, 0, 0, 0.4);
+	display: inline-block;
 }
 #perfil {
 	width: 25%;
 	border-radius: 10px 100px / 120px;
-	/* display: inline-block; */
-	background-color: rgba(9, 255, 0, 0.623);
 	padding: 1% 0% 1% 0%;
 }
 
-#sobre{
+#sobre {
 	font-size: 2.5em;
 	word-break: normal;
-	/* background-color: red; */
 	margin-left: 2%;
 	margin-right: 2%;
 	width: 70%;
-	/* display: inline-block; */
-	float:right;
+	float: right;
 }
-aside{
+aside {
 	word-break: break-all;
-	/* background-color: red; */
 	margin-right: 5%;
 	width: 30%;
-	/* display: inline-block; */
-	float:right;
 	padding-top: 1%;
 	padding-bottom: 2%;
 	word-break: normal;
 	text-align: center;
 }
-#tcc{
-	/* display: inline-block; */
+#tcc {
 	width: 100%;
 	height: 27em;
 }
 
-.container{
-	display: flex;
-	justify-content: center;  
- }
+.container {
+	margin-bottom: 1%;
+	padding: 5%;
+	width: 90%;
+	border-radius: 10px 100px / 120px;
+	background-color: var(--black);
+	/* display: flex; */
+	/* justify-content: center;   */
+}
