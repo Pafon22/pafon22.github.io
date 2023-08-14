@@ -107,10 +107,11 @@ nav {
 	/* tem display aq tb p evitar juntar com o header qd diminui a tela */
 	display: inline-block;
 	width: 100%;
+	position: sticky;
+	top: 0;
 }
 
 nav ul li {
-	position: sticky;
 	font-family: "Bricolage Grotesque", sans-serif;
 	font-size: 2em;
 	font-style: bold;
@@ -127,6 +128,9 @@ nav a {
 	color: white;
 }
 
+#barra {
+	background-color: #000000;
+}
 a:hover {
 	color: var(--paleta1);
 	text-shadow: 2px 1px 2px black;
@@ -176,7 +180,7 @@ aside {
 }
 
 .container {
-	margin-bottom: 1%;
+	margin-bottom: 3%;
 	padding: 5%;
 	width: 90%;
 	border-radius: 10px 100px / 120px;
@@ -185,21 +189,28 @@ aside {
 	/* justify-content: center;   */
 }
 
-#hard-skills h2{
+#hard-skills h2 {
 	text-align: center;
 	font-size: 2.5em;
 	color: var(--paleta1);
 }
 
-.span1{
+#hard-skills .container {
+	padding: 1% 5% 5% 5%;
+}
+
+#hard-skills span {
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.1);
+	margin: 0 2% 2% 0;
 	white-space: nowrap;
-	margin-right: 2%;
+}
+.span1 {
 	font-size: 2em;
 	color: var(--paleta4);
 }
 
-.span2{
-	white-space: nowrap;
+.span2 {
 	font-size: 1.2em;
-	margin-right: 2%;
+	
 }
