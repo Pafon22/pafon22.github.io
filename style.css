@@ -43,6 +43,7 @@
 
 html {
 	scroll-behavior: smooth;
+	animation: move 1.5s;
 }
 
 b {
@@ -69,35 +70,122 @@ header {
 	color: var(--paleta4);
 }
 
+#envolve{
+	color: white;
+	animation: esconde 5s, aparece 2s 5s;
+}
 header span:first-of-type {
 	width: 100%;
 	display: block;
 	white-space: nowrap;
 	overflow: hidden;
-	animation: digita 2s steps(100);
+	animation: esconde 2s, digita 2s steps(100) 2s;
+	opacity: 1;
+	
 }
+@keyframes esconde{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 0;
+	}
+}
+
+@keyframes aparece{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
 @keyframes digita {
-	from {
+	0% {
 		border-right: 4px solid;
 		width: 0;
 	}
-	to {
+	100% {
 		border-right: 4px solid;
 		width: 100%;
 	}
 }
+@keyframes apaga-esq {
+	from {
+		border-right: 4px solid;
+		
+		width: 100%;
+	}
+	to {
+		border-right: 4px solid;
+		width: 4%;
+	}
+}
+@keyframes apaga-dir {
+	from {
+		border-left: 4px solid;
+		width: 100%;
+	}
+	to {
+		border-left: 4px solid;
+		width: 8%;
+	}
+}
+
+@keyframes rotate {
+	0% {
+	  transform: rotate(0);
+	}
+	100% {
+	  transform: rotate(360deg);
+	}
+  }
+
+  @keyframes move {
+	
+	20% {
+		transform: translateY(100px) translateX(0);
+	}
+	
+	40% {
+		transform: translateY(0) translateX(150px);
+	}
+
+	60% {
+		transform: translateY(300px) translateX(250px);
+	}
+	70% {
+		transform: translateY(100px) translateX(50px);
+	}
+	80% {
+		transform: translateY(-400px) translateX(-1000px);
+	}	
+	100% {
+		transform: translateY(0) translateX(0);
+	}
+	
+}
+
 
 header span:not(:nth-of-type(1)) {
 	font-size: 0.4em;
 	display: inline-block;
 	border-bottom: dotted 2px var(--paleta4);
 }
-.left {
+header .left {
+	animation: apaga-esq 2s steps(100);
 	float: left;
 }
-.right {
+header .right {
+	animation: apaga-dir 2s steps(100);
+}
+
+.right{
 	float: right;
 }
+
+
 
 nav {
 	text-align: center;
@@ -109,9 +197,21 @@ nav {
 	width: 100%;
 	position: sticky;
 	top: 0;
+	animation: esconde 2s, move-nav 3s 2s;
+}
+
+@keyframes move-nav {
+	
+	from {
+		transform: translateY(-600px) translateX(3000px);
+	}
+	to{
+		transform: translateY(0) translateX(0);
+	}
 }
 
 nav ul li {
+	
 	font-family: "Bricolage Grotesque", sans-serif;
 	font-size: 2em;
 	font-style: bold;
@@ -144,11 +244,15 @@ a:visited {
 	text-decoration: none;
 }
 
+main{
+	animation: esconde 2s, rotate 1s 2s;
+}
 article {
 	padding-top: 1%;
 	width: 60%;
 	margin: 2%;
 	display: inline-block;
+	
 }
 #foto {
 	width: 25%;
