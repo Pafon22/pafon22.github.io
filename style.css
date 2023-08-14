@@ -1,5 +1,4 @@
 :root {
-
 	/* --modn: max(
   max(var(--num) - 0, 0) * (0 - max(-1, ((min(var(--num) - n, 0)) * max(var(--num) - 0, 0)))),
   max(var(--num) - n, 0) * (0 - max(-1, ((min(var(--num) - 2*n, 0)) * max(var(--num) - n, 0)))),
@@ -10,7 +9,6 @@
   max(var(--num) - (n-1)*n, 0) * (0 - max(-1, ((min(var(--num) - n*n, 0)) * max(var(--num) - (n-1)*n, 0))))
  ); */
 
- 
 	/* BASE
 	color: rgb(9,255,0) */
 
@@ -22,17 +20,29 @@
 	--paleta2: rgb(var(--modn, calc(var(--red) - 5), 255), var(--modn, calc(var(--green) - 139), 255), calc(var(--blue) + 88));
 	--paleta3: rgb(calc(var(--red) + 21), calc(var(--green) - 145), calc(var(--blue) + 4));
 	--paleta4: rgb(calc(var(--red) + 160), calc(var(--green) - 2), calc(var(--blue) + 172)); */
-/* Tentando colocar o módulo de 255 no argumento de soma para que abaixo de 0 e acima de 255 não fique fixado em uma cor. Assim poderei alterar o tema do git escolhendo só a cor base 
+	/* Tentando colocar o módulo de 255 no argumento de soma para que abaixo de 0 e acima de 255 não fique fixado em uma cor. Assim poderei alterar o tema do git escolhendo só a cor base 
 */
-	
+
 	--paleta1: rgb(9, 255, 0);
 	--paleta2: rgb(4, 116, 88);
 	--paleta3: rgb(30, 110, 4);
 	--paleta4: rgb(169, 253, 172);
+
+	--paleta2g: linear-gradient(
+		270deg,
+		rgba(0, 5, 0, 1) 0%,
+		var(--paleta2) 45%,
+		rgba(0, 5, 0, 1) 100%
+	);
 	--black: rgba(0, 0, 0, 0.4);
+	--black2: rgba(0, 0, 0, 0.9);
 
 	/* TESTE HSL */
 	/* --paleta1: hsl(118, 100%, 50%); */
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 b {
@@ -44,7 +54,7 @@ body {
 	background: linear-gradient(
 		270deg,
 		rgba(0, 5, 0, 1) 0%,
-		var(--paleta2) 45%,
+		var(--black2) 45%,
 		rgba(0, 5, 0, 1) 100%
 	);
 	font-family: "Bricolage Grotesque", sans-serif;
@@ -91,7 +101,7 @@ header span:not(:nth-of-type(1)) {
 
 nav {
 	text-align: center;
-	background-color: var(--black);
+	background: var(--paleta2g);
 	margin-top: 1%;
 	padding: 1% 0;
 	/* tem display aq tb p evitar juntar com o header qd diminui a tela */
@@ -100,6 +110,7 @@ nav {
 }
 
 nav ul li {
+	position: sticky;
 	font-family: "Bricolage Grotesque", sans-serif;
 	font-size: 2em;
 	font-style: bold;
@@ -107,7 +118,6 @@ nav ul li {
 	list-style: none;
 	margin: 0 5% 0 0;
 	display: inline-block;
-	position: sticky;
 	text-decoration: wavy underline;
 	text-decoration-color: var(--paleta2);
 }
@@ -136,7 +146,7 @@ article {
 	margin: 2%;
 	display: inline-block;
 }
-#perfil {
+#foto {
 	width: 25%;
 	border-radius: 10px 100px / 120px;
 	padding: 1% 0% 1% 0%;
@@ -170,7 +180,26 @@ aside {
 	padding: 5%;
 	width: 90%;
 	border-radius: 10px 100px / 120px;
-	background-color: var(--black);
+	background: var(--paleta2g);
 	/* display: flex; */
 	/* justify-content: center;   */
+}
+
+#hard-skills h2{
+	text-align: center;
+	font-size: 2.5em;
+	color: var(--paleta1);
+}
+
+.span1{
+	white-space: nowrap;
+	margin-right: 2%;
+	font-size: 2em;
+	color: var(--paleta4);
+}
+
+.span2{
+	white-space: nowrap;
+	font-size: 1.2em;
+	margin-right: 2%;
 }
