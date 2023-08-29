@@ -147,9 +147,6 @@ header .right {
 	}
 }
 
-
-
-
 nav {
 	text-align: center;
 	background: var(--paleta2g);
@@ -228,6 +225,18 @@ article {
 	display: inline-block;
 	
 }
+.container {
+	margin-bottom: 3%;
+	padding: 5%;
+	width: 90%;
+	border-radius: 10px 100px / 120px;
+	background: var(--paleta2g);
+}
+
+.container h1{
+	font-size:  1em;
+}
+
 #foto {
 	width: 25%;
 	border-radius: 10px 100px / 120px;
@@ -257,15 +266,6 @@ aside {
 	height: 27em;
 }
 
-.container {
-	margin-bottom: 3%;
-	padding: 5%;
-	width: 90%;
-	border-radius: 10px 100px / 120px;
-	background: var(--paleta2g);
-	/* display: flex; */
-	/* justify-content: center;   */
-}
 
 #hard-skills h2 {
 	text-align: center;
