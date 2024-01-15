@@ -235,6 +235,7 @@ article {
 
 .container h1{
 	font-size:  1em;
+	white-space:break-spaces;
 }
 
 #foto {
@@ -267,28 +268,22 @@ aside {
 }
 
 
-#hard-skills h2 {
+section h2 {
 	text-align: center;
 	font-size: 2.5em;
 	color: var(--paleta1);
 }
 
-#hard-skills .container {
-	padding: 1% 5% 5% 5%;
-}
-
-#hard-skills span {
+.container span {
 	display: inline-block;
-	background-color: rgba(0, 0, 0, 0.1);
 	margin: 0 2% 2% 0;
 	white-space: nowrap;
 }
 .span1 {
-	font-size: 2em;
+	font-size: 1.6em;
 	color: var(--paleta4);
 }
 
 .span2 {
-	font-size: 1.2em;
-	
+	font-size: 1.2em;	
 }
