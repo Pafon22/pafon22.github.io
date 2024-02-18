@@ -32,7 +32,7 @@ const inserirHardSkills = (hs1, hs2) => {
 }
 
 const carregarHardSkills = () => {
-    const hardskills1 = ['JAVASCRIPT', 'TWITCH', 'CHATBOTS', 'HTML/CSS', 'STREAMELEMENTS API', 'GOOGLE STYLESHEETS'];
+    const hardskills1 = ['JAVASCRIPT', 'TWITCH', 'CHATBOTS', 'HTML/CSS', 'REACT', 'STREAMELEMENTS API', 'REDUX', 'GOOGLE STYLESHEETS'];
     const hardskills2 = ['JAVA', 'C#', 'NIGHTBOT', 'STREAMLABS', 'OBS', 'MIX IT UP', 'ADOBE PREMIERE', 'SONY VEGAS', 'PHOTOSHOP', 'EXCEL'];
     inserirHardSkills(hardskills1, hardskills2);
 }
